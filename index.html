@@ -1,11 +1,578 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"> 
+    <!-- js --> 
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <!-- plugin -->
+    <script src="./js/plugin/splitting.min.js"></script>
+    <script src="./js/plugin/scrolla.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="./js/plugin/jquery.simplyscroll.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+    <title>2024년 황이나 포트폴리오</title>
 </head>
 <body>
-    
+    <!-- S: wrap --> 
+    <div class="wrap">
+        
+        <!-- S:header -->
+        <header> 
+            <a class="home">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+            </a>
+            <div class="gnb">
+                <ul>
+                    <li><a href="#about" data-splitting>about</a></li>
+                    <li><a href="#work" data-splitting>work</a></li>
+                    <li><a href="#blog" data-splitting>blog</a></li>
+                    <li><a href="#contact" data-splitting>contact</a></li>
+                </ul>
+            </div>
+            <a href="#" class="mo-menu">
+                <span class="a"></span>
+                <span class="b"></span>
+                <span class="c"></span>
+            </a>
+        </header>
+        <!-- E:header -->
+
+        <!-- S:main-visual -->
+        <section class="main-visual animate" data-animate="motion">
+            <div class="inner">
+                <div class="main-txt"> 
+                    <p><span class="en first-txt">hi! I'm working on design,</span></p>
+                    <p><span class="en second-txt">publishing, and frontend.</span></p>
+                </div>
+                <div class="main-img-ani">
+                    <svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 5000 2000">
+                        <defs>
+                            <style>
+                                .main-img {
+                                    fill: none;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 12px;
+                                }
+                                #mainVis01{stroke: #d499b9;}
+                                #mainVis05{stroke: #d499b9;}
+                                #mainVis02{stroke: #d7c9d1;}
+                                #mainVis04{stroke: #77ba8a;}
+                                #mainVis03{stroke: #77ba8a;}
+                                #mainVis06{stroke: #d499b9;}
+                            </style>
+                        </defs>
+                        <path id="mainVis01" class="main-img" d="M1.61,1402.62s302.96,79.23,604.92-137.11c145.7-137.19,406.89-341.96,544-124.43,82.72,168.51-142.01,252.41-213.48,119.31s26.5-317.23,302.29-323.21,503.47,241.21,591.8,301.96c229.35,157.75,519,193.35,563.31,13,0-244.34-17.36-858.13-17.36-858.13,0,0,4.09-52.09,50.55-51.57s1107.38,2.72,1107.38,2.72c0,0,99.58-9.9,98.18,121.87s7.21,615.32,7.21,615.32"/>
+                        <path id="mainVis02" class="main-img" d="M3598.91,366.93s-1141.74,14.87-1150.98,23.52c-14.03,4.21-38.03,7.4-36.12,48.51s25.53,773.5,25.53,773.5c0,0-3.48,33.21,46.72,28.2s74.3-15.93,74.3-15.93c0,0,29.87-4.49,37.53,16.44s855.57-68.69,855.57-68.69c0,0,120.44.77,88.18-33.7s-78.08,37.73-41.45,54.42,91.15.02,126.38,13.02,375.14,223.13,361.53,260.42c.4,42.11-445.79,88.07-695.49,112.58-154.72-19.15-177.45-106.21-177.45-106.21,0,0-5.87-16.98,20.43-21.06s330.89-35.2,363.83-35.16,127.15,26.86,140.94,90.43c-8.95,20.86-39.06,26.04-39.06,26.04l-477.19,76.6-179.23,26.04s-105.27,10.08-167.23-43.69-297.04-271.57-297.04-271.57c0,0,5-21.91,49.18-25.97s486.71-49.17,486.71-49.17"/>
+                        <path id="mainVis03" class="main-img" d="M2834.76,1448.48s602.54-72.55,662.25-73.45,74.58-16.22,74.58-16.22c0,0,23.25-36.53-244.46.62s-492.37,57.35-492.37,57.35c0,0-122.56,6.67-56.25,31.7s702.55-60.83,702.55-60.83"/>
+                        <path id="mainVis04" class="main-img" d="M3617.94,1284.19l-908.46,86.17s-50.52,38.57,40.38,32.05,881.54-99.46,894.73-87.2c13.72-11.23-4.38-54.33-62.52-59.43-22.78-2-170.75,11.95-342.28,29.65-266.14,27.46-588.99,63.96-588.99,63.96,0,0-50.32-31.1,10.96-38.4s834.66-92.8,837.72-91.78,42.13-11.19,35.41,13.86-273.42,21.34-287.66,37.2-8.85,25.53-8.85,25.53"/>
+                        <path id="mainVis05" class="main-img" d="M2447.94,454.24l26.17,727.76s-18.62,31.66,46.27,22.1,996.35-108.46,996.35-108.46c0,0,64.33,10.21,64.33-81.7s-8.95-578.04-8.95-578.04c0,0-.13-25.15-67.53-19.66s-1021.35,20.68-1021.35,20.68c0,0-23.67,2.98-35.29,17.32Z"/>
+                        <path id="mainVis06" class="main-img" d="M2609.85,1239.75l-170.52,29.28s-61.51,39.15,8.59,95.26,297.33,293.56,297.33,293.56c0,0,84.4,34.5,260.94,9.75s670.27-99.03,670.27-99.03c0,0,167.49-12.03,328.69-57.63s119.09-39.95,249.93-157.42,365.91-27.37,365.91-27.37c0,0,183.15,59.56,239.38,56.73s135.81-31.93,135.81-31.93"/>
+                    </svg>
+                </div>
+            </div>
+        </section> 
+        <!-- E:main-visual -->
+
+        <!-- S:sec-about -->
+        <section id="about" class="sec sec-about sec01 animate" data-animate="motion">
+            <div class="inner">
+                <div class="about-cont">
+                    <div class="about-left">
+                        <div class="ab-img-area">
+                            <div class="ab-img"></div>
+                        </div>
+                        <div class="ab-txt-area">
+                            <div class="ab-txt">
+                                <h2>끊임없이 발전하고 행복한 사람</h2>
+                                <p> 끊임없이 노력하는 황이나입니다.<br> 웹사이트를 디자인하고 구현해내는 <br> 고객의 니즈 충족에 성취감을 느낍니다.<br>긍정적인 마음으로 사람들과 협업하여<br> 일을 완벽히 해내는 것에 보람을 느낍니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-center about-list">
+                        <ul>
+                            <li>
+                                <div class="ab-list-tit "><span class="en">About</span></div>
+                                <div class="ab-list-txts">
+                                    <ul>
+                                        <li>
+                                            <div class="txt-left">이름</div>
+                                            <div class="txt-right">황이나</div>
+                                        </li>
+                                        <li>
+                                            <div class="txt-left">나이</div>
+                                            <div class="txt-right">19941001</div>
+                                        </li>
+                                        <li>
+                                            <div class="txt-left">거주지</div>
+                                            <div class="txt-right">서울</div>
+                                        </li>
+                                        <li>
+                                            <div class="txt-left">이메일</div>
+                                            <div class="txt-right en">ina357@naver.com</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ab-list-tit "><span class="en">Work Experience</span></div>
+                                <div class="ab-list-txts">
+                                    <ul>
+                                        <li>
+                                            <div class="txt-left">2022~<br class="pc">2024</div> 
+                                            <div class="txt-right">(주)알디 <br>웹디자인 웹퍼블리셔로 근무<br> (1년 8개월)</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ab-list-tit "><span class="en">License</span></div>
+                                <div class="ab-list-txts">
+                                    <ul>
+                                        <li>
+                                            <div class="txt-left">2022</div>
+                                            <div class="txt-right">웹디자인기능사 자격증</div>
+                                        </li>
+                                        <li>
+                                            <div class="txt-left">2022</div>
+                                            <div class="txt-right">GTQ (그래픽기술자격) 1급 자격증</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-right about-list">
+                        <ul>
+                            <li>
+                                <div class="ab-list-tit "><span class="en">Develop Tech</span></div>
+                                <div class="ab-list-txts">
+                                    <ul class="list-dot">
+                                        <li>
+                                            웹사이트를 직접 디자인하고 마크업하여 레이아웃 틀어짐 없도록 반응형 웹퍼블리싱이 가능합니다. 
+                                        </li>
+                                        <li>
+                                            협업을 위하여 유지보수하기 용이한 코드를 짤 수 있도록 노력합니다.
+                                        </li>
+                                        <li>
+                                            유지보수 경험이 있으며 시스템과 구조 파악을 위해 연구합니다.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ab-list-skill">
+                                    <ul>
+                                        <li>
+                                            #html/css 90%
+                                        </li>
+                                        <li>
+                                            #jQuery 80%
+                                        </li>
+                                        <li>
+                                            #Javascript 70%
+                                        </li>
+                                        <li>
+                                            #Github 30%
+                                        </li>
+                                        <li>
+                                            #Scss 30%
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ab-list-tit "><span class="en">Design Tech</span></div>
+                                <div class="ab-list-txts">
+                                    <ul class="list-dot">
+                                        <li>
+                                            Photoshop, Illustrator를 이용한 웹사이트 작업이 가능하며, Figma와 Zeplin도 이용하여 디자인이 가능합니다.
+                                        </li>
+                                        <li>창의적이고 미학적으로 뛰어난 디자인을 하도록 노력합니다.</li>
+                                        <li>
+                                            여러가지 시안을 보여준 후 다른 사람의 의견을 잘 수용하여 최종 결과물을 만들어냅니다.
+                                        </li>
+                                        <li>
+                                            사용자 입장에서 사용성을 고려하여 디자인을 합니다.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ab-list-skill">
+                                    <ul>
+                                        <li>
+                                            #Photoshop 90%
+                                        </li>
+                                        <li>
+                                            #Illustrator 80%
+                                        </li>
+                                        <li>
+                                            #Figma 80%
+                                        </li>
+                                        <li>
+                                            #Zeplin 80%
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- E:sec-about -->
+
+        <!-- S:sec-work -->
+        <div id="work" class="sec sec-work sec03 animate" data-animate="motion">
+            <div class="inner">
+                <div class="tit en">
+                    <span>Website Design</span>
+                    <span>&#38; Publishing</span>
+                </div>
+
+                <!-- S:pc work-cont-->
+                <div class="work-cont pc">
+                    <ul>
+                        <li>
+                            <a href="./work01.html">
+                                <div class="work-img">
+                                    <img src="./images/img_work01.png" alt="한국케이블텔레콤">
+                                </div>
+                                <p class="work-tit en"><span class="bot-line">korea cable telecom</span></p>
+                                <div class="work-skill en">
+                                    <p>Responsive Web</p>
+                                    <ul class="list-dot">
+                                        <li>UI/UX Design</li>
+                                        <li>Web Publiching</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work02.html">
+                                <div class="work-img">
+                                    <img src="./images/img_work02.png" alt="티플로">
+                                </div>
+                                <p class="work-tit en"><span class="bot-line">tplro</span></p>
+                                <div class="work-skill en">
+                                    <p>Responsive Web</p>
+                                    <ul class="list-dot">
+                                        <li>UI/UX Design</li>
+                                        <li>Web Publiching</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work03.html">
+                                <div class="work-img">
+                                    <img src="./images/img_work03.png" alt="티플러스">
+                                </div>
+                                <p class="work-tit en"><span class="bot-line">tplus</span></p>
+                                <div class="work-skill en">
+                                    <p>Responsive Web</p>
+                                    <ul class="list-dot">
+                                        <li>UI/UX Design</li>
+                                        <li>Web Publiching</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work04.html">
+                                <div class="work-img">
+                                    <img src="./images/img_work04.png" alt="일대쇼핑">
+                                </div>
+                                <p class="work-tit ko"><span class="bot-line">일대쇼핑</span></p>
+                                <div class="work-skill en">
+                                    <p>Responsive Web</p>
+                                    <ul class="list-dot">
+                                        <li>UI/UX Design</li>
+                                        <li>Web Publiching</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work05.html">
+                                <div class="work-img">
+                                    <img src="./images/img_work05.png" alt="itemOn">
+                                </div>
+                                <p class="work-tit en"><span class="bot-line">itemOn</span></p>
+                                <div class="work-skill en">
+                                    <p>Responsive Web</p>
+                                    <ul class="list-dot">
+                                        <li>UI/UX Design</li>
+                                        <li>Web Publiching</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="./work06.html">
+                                <div class="work-img">
+                                    <img src="./images/img_work06.png" alt="뮤즈월드">
+                                </div>
+                                <p class="work-tit en"><span class="bot-line">muzworld</span></p>
+                                <div class="work-skill en">
+                                    <p>Responsive Web</p>
+                                    <ul class="list-dot">
+                                        <li>UI/UX Design</li>
+                                        <li>Web Publiching</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- E:pc work-cont-->
+
+                <!-- S:mobile work-cont-->
+                <div class="work-cont mobile">
+                    <div class="swiper work-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="./work01.html">
+                                    <div class="work-img">
+                                        <img src="./images/img_work01.png" alt="한국케이블텔레콤">
+                                    </div>
+                                    <p class="work-tit en">korea cable telecom</p>
+                                    <div class="work-skill en">
+                                        <p>Responsive Web</p>
+                                        <ul class="list-dot">
+                                            <li>UI/UX Design</li>
+                                            <li>Web Publiching</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="work-img">
+                                        <img src="./images/img_work02.png" alt="tplro">
+                                    </div>
+                                    <p class="work-tit en">tplro</p>
+                                    <div class="work-skill en">
+                                        <p>Responsive Web</p>
+                                        <ul class="list-dot">
+                                            <li>UI/UX Design</li>
+                                            <li>Web Publiching</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="work-img">
+                                        <img src="./images/img_work03.png" alt="tplus">
+                                    </div>
+                                    <p class="work-tit en">tplus</p>
+                                    <div class="work-skill en">
+                                        <p>Responsive Web</p>
+                                        <ul class="list-dot">
+                                            <li>UI/UX Design</li>
+                                            <li>Web Publiching</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="work-img">
+                                        <img src="./images/img_work04.png" alt="한국케이블텔레콤">
+                                    </div>
+                                    <p class="work-tit en">일대쇼핑</p>
+                                    <div class="work-skill en">
+                                        <p>Responsive Web</p>
+                                        <ul class="list-dot">
+                                            <li>UI/UX Design</li>
+                                            <li>Web Publiching</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="work-img">
+                                        <img src="./images/img_work05.png" alt="itemOn">
+                                    </div>
+                                    <p class="work-tit en">itemOn</p>
+                                    <div class="work-skill en">
+                                        <p>Responsive Web</p>
+                                        <ul class="list-dot">
+                                            <li>UI/UX Design</li>
+                                            <li>Web Publiching</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="work-img">
+                                        <img src="./images/img_work06.png" alt="muzworld">
+                                    </div>
+                                    <p class="work-tit en">muzworld</p>
+                                    <div class="work-skill en">
+                                        <p>Responsive Web</p>
+                                        <ul class="list-dot">
+                                            <li>UI/UX Design</li>
+                                            <li>Web Publiching</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next work-button-next"></div>
+                        <div class="swiper-button-prev work-button-prev"></div>
+                    </div>
+                </div>
+                <!-- E:mobile work-cont-->
+            </div>
+        </div>
+        <!-- S:sec-work -->
+
+        <script>
+            // sec-work 모바일 스와이퍼
+            var swiper = new Swiper(".work-swiper", {
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: ".work-button-next",
+                    prevEl: ".work-button-prev",
+                },
+            });
+        </script>
+
+        <!-- S:sec-blog -->
+        <div id="blog" class="sec sec-blog sec04 animate"  data-animate="motion">
+            <div class="inner">
+                <div class="tit">
+                    <span> Website Study</span> 
+                    <span> &#38; Daily Blog</span>
+                </div>
+                <div class="content">
+                    <div class="blog-list">
+                        <ul>
+                            <li>
+                                <span class="blog-list-num">01.</span>
+                                <p>[header] 모바일 일 때 gnb 메뉴</p>
+                                <a href="https://ina357.tistory.com/169" target="_blank" class="blog-more-btn">더보기</a>
+                            </li>
+                            <li>
+                                <span class="blog-list-num">02.</span>
+                                <p>[header] gnb 메뉴 효과 (+ splitting)</p>
+                                <a href="https://ina357.tistory.com/162" class="blog-more-btn" target="_blank">더보기</a>
+                            </li>
+                            <li>
+                                <span class="blog-list-num">03.</span>
+                                <p>scrolla.js 사용법</p>
+                                <a href="https://ina357.tistory.com/165" class="blog-more-btn" target="_blank">더보기</a>
+                            </li>
+                            <li>
+                                <span class="blog-list-num">05.</span>
+                                <p>svg 애니를 만드는방법</p>
+                                <a href="https://ina357.tistory.com/166" class="blog-more-btn" target="_blank">더보기</a>
+                            </li>
+                            <li>
+                                <span class="blog-list-num">04.</span>
+                                <p>[section]고정된 섹션에 하위 섹션이 올라오는 기능(+ ScrollTrigger)</p>
+                                <a href="#" class="blog-more-btn"><span onclick="alert('준비중 입니다')">더보기</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- E:sec-blog -->
+
+        <!-- S:sec-contact -->
+        <div id="contact" class="sec sec-contact sec05 animate" data-animate="motion">
+            <div class="inner">
+                <div class="tit en">
+                    <span>Work together,</span>
+                    <span>Contact me</span>
+                </div>
+                <div class="contact-cont content">
+                    <ul>
+                        <li>
+                            <p class="contact-q">To contact me</p>
+                            <p class="contact-a">
+                                <a href="mailto:ina357@naver.com" class="contact-social">
+                                    <svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Glyph_copy_2"><path d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z"/><path d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z"/></g></svg>
+                                    <span class="sns01">ina357@naver.com</span>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="contact-q">Go to github</p>
+                            <p class="contact-a">
+                                <a href="#" class="contact-social">
+                                    <svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+                                        <defs>
+                                            <style>
+                                                .icon-fill {fill: #fff;}
+                                                .icon-fill, .icon-fill02 {stroke-width: 0px;}
+                                                .icon-fill02 {fill: #222;}
+                                            </style>
+                                        </defs>
+                                        <circle class="icon-fill" cx="50" cy="50" r="50" transform="translate(-20.71 50) rotate(-45)"/>
+                                        <path class="icon-fill02" d="M25.67,34.38s-1.35-7.62.74-11.89c0,0,5.29-.14,12.15,4.59,0,0,11.78-3.57,22.83.09,0,0,6.31-4.73,12.34-4.69,0,0,2.46,5.04.56,11.89-.03.11.72.92.79,1.02.67.94,1.24,1.95,1.74,3,2.9,6.12,2.46,13.52-.44,19.55-.77,1.61-1.7,3.14-2.93,4.44-2.27,2.4-5.31,3.88-8.43,4.84-1.11.34-2.25.63-3.39.84-.55.1-1.1.2-1.64.32-.3.07-.6.14-.9.2-.18.03-.54,0-.68.12.02.12.14.2.22.28.11.11.21.23.3.35.23.29.44.59.63.91.6,1,1.01,2.11,1.27,3.25.21.92.28,1.87.28,2.82v13.58s1.01,6.48,16.97,1.85c0,0-27.27,18.92-55.67.03,0,0,14.75,4.11,16.47-1.83v-8.3s-7.47,1.76-12.02-1.67c0,0-2.18-1.16-4.13-6.26,0,0-1.35-3.57-5.66-5.85,0,0-1.07-1.21,1.35-1.3s4.18,1.07,4.18,1.07c0,0,1.95.7,4.08,4.64,0,0,2.18,4.08,8.3,3.53,0,0,3.91-.25,4.07-1.69s1.52-4.31,2.81-5.38c0,0-12.54-1.33-17-8.15-4.45-6.82-5.34-18.9.79-26.2Z"/>
+                                    </svg>
+                                    <span class="sns02">hwang ina Github</span>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="contact-q">Social</p>
+                            <p class="contact-a">
+                                <a href="#" class="contact-social contact-kakao">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g>
+                                            <path fill="none" d="M0 0h24v24H0z"/>
+                                            <path d="M12 3c5.799 0 10.5 3.664 10.5 8.185 0 4.52-4.701 8.184-10.5 8.184a13.5 13.5 0 0 1-1.727-.11l-4.408 2.883c-.501.265-.678.236-.472-.413l.892-3.678c-2.88-1.46-4.785-3.99-4.785-6.866C1.5 6.665 6.201 3 12 3zm5.907 8.06l1.47-1.424a.472.472 0 0 0-.656-.678l-1.928 1.866V9.282a.472.472 0 0 0-.944 0v2.557a.471.471 0 0 0 0 .222V13.5a.472.472 0 0 0 .944 0v-1.363l.427-.413 1.428 2.033a.472.472 0 1 0 .773-.543l-1.514-2.155zm-2.958 1.924h-1.46V9.297a.472.472 0 0 0-.943 0v4.159c0 .26.21.472.471.472h1.932a.472.472 0 1 0 0-.944zm-5.857-1.092l.696-1.707.638 1.707H9.092zm2.523.488l.002-.016a.469.469 0 0 0-.127-.32l-1.046-2.8a.69.69 0 0 0-.627-.474.696.696 0 0 0-.653.447l-1.661 4.075a.472.472 0 0 0 .874.357l.33-.813h2.07l.299.8a.472.472 0 1 0 .884-.33l-.345-.926zM8.293 9.302a.472.472 0 0 0-.471-.472H4.577a.472.472 0 1 0 0 .944h1.16v3.736a.472.472 0 0 0 .944 0V9.774h1.14c.261 0 .472-.212.472-.472z"/>
+                                        </g>
+                                    </svg>
+                                    <span class="sns03">kakao id : ina357</span>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+        <!-- E:sec-contact -->
+        
+    </div>
+    <!-- E: wrap -->
+    <script>
+        function init() {
+            gsap.registerPlugin(ScrollTrigger);
+            ScrollTrigger.matchMedia({
+                "(min-width: 1440px)": function() {
+                    gsap.utils.toArray('section').forEach((section, i)=>{
+                        ScrollTrigger.create({
+                            trigger:section,
+                            start:'top top',
+                            pin:true,
+                            pinSpacing:false ,
+                            //markers:true
+                        })
+                    })
+                }
+            });
+                window.addEventListener("resize", ScrollTrigger.update);
+            }
+        init();
+    </script>
 </body>
 </html>
