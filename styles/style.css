@@ -136,57 +136,33 @@ header .home svg{width: 100%; fill: #fff;}
 /* 텍스트 애니메이션 */
 .main-txt{font-size: 5vw; font-weight: 500; line-height: 1.2; margin-bottom: 40px;}
 .main-visual.motion .main-txt{transform: translate3d(0,0,0) skewY(0deg); overflow: hidden; color: #d499b9;}
-.main-visual.motion .main-txt span.first-txt{display: block; animation-name: text-ani; animation-duration: .8s;}
-.main-visual.motion .main-txt span.second-txt{display: block; animation-name: text-ani; animation-duration: .6s;}
+.main-visual.motion .main-txt span.first-txt{display: block; animation-name: text-ani; animation-duration: .6s;}
+.main-visual.motion .main-txt span.second-txt{display: block; animation-name: text-ani; animation-duration: .4s;}
+.main-visual.motion .main-btn{display: block; animation-name: btn-ani; animation-duration: 1s;}
 @keyframes text-ani{
     0%{opacity: 0;}
     30%{opacity: 0; transform: translate3d(0,-90px,0) skewY(-10deg); transform-origin: top left;}
 }
-
+@keyframes btn-ani{
+    0%{opacity: 0;}
+    30%{opacity: 0; transform: translate3d(0,-90px,0) skewY(-25deg); transform-origin: top left;}
+}
 .main-btn{width: 160px; border-radius: 30px; padding: 15px 20px; background-color: #d499b9; color: #fff; text-align: center; letter-spacing: 1.1px;}
 
 /* svg 애니메이션 */
 .main-img-ani{position: absolute; bottom: 10%; right: 0;}
-.main-img-ani svg{width: 700px;}
-.main-visual.motion .main-img-ani #mainVis01{stroke-dasharray: 6383; stroke-dashoffset: 6383; animation: mainVis01 .8s linear 0.8s forwards;}
-.main-visual.motion .main-img-ani #mainVis05{stroke-dasharray: 3632; stroke-dashoffset: 3632; animation: mainVis05 .8s linear 1.2s forwards;}
-.main-visual.motion .main-img-ani #mainVis02{stroke-dasharray: 7184; stroke-dashoffset: 7184; animation: mainVis02 .8s linear 1.4s forwards;}
-.main-visual.motion .main-img-ani #mainVis04{stroke-dasharray: 4215; stroke-dashoffset: 4215; animation: mainVis04 .8s linear 1.6s forwards;}
-.main-visual.motion .main-img-ani #mainVis03{stroke-dasharray: 2305; stroke-dashoffset: 2305; animation: mainVis03 .8s linear 1.8s forwards;}
-.main-visual.motion .main-img-ani #mainVis06{stroke-dasharray: 3028; stroke-dashoffset: 3028; animation: mainVis06 .8s linear 2s forwards;}
+.main-img-ani svg{width: 500px;}
+.main-visual.motion .main-img-ani #mainVis01{stroke-dasharray: 5212; stroke-dashoffset: 5212; animation: mainVis01 1.2s linear 1s forwards;}
 /* stroke-dasharray 점선을 만들어주는 속성 , stroke-dashoffset 애니메이션을 어디서부터 시작할것인지 정해주는 속성 , animation 애니명 - 진행시간 - 진행속도 - 딜레이 진행방향순으로 작성 */
 /* 딜레이 숫자를 달리해서 순서대로 나타나게 만들어준다. 2s씩 */
 /* 점없애는 방법 stroke-dasharray랑 stroke-dashoffset를 +2 정도하여  더 길게 적어주면된다. */
-/* mainVis01 길이 : 6381 */
+
+/* mainVis01 길이 : 5210.31 */
 @keyframes mainVis01{
-    0%{stroke-dashoffset: 6381;} 
+    0%{stroke-dashoffset: 5210;} 
     100%{stroke-dashoffset: 0;}
 }
-/* mainVis02 길이 : 7182 */
-@keyframes mainVis02{
-    0%{stroke-dashoffset: 7182;} 
-    100%{stroke-dashoffset: 0;}
-}
-/* mainVis03 길이 : 2303 */
-@keyframes mainVis03{
-    0%{stroke-dashoffset: 2303;} 
-    100%{stroke-dashoffset: 0;}
-}
-/* mainVis04 길이 : 4213 */
-@keyframes mainVis04{
-    0%{stroke-dashoffset: 4213;} 
-    100%{stroke-dashoffset: 0;}
-}
-/* mainVis05 길이 : 3630 */
-@keyframes mainVis05{
-    0%{stroke-dashoffset: 3630;} 
-    100%{stroke-dashoffset: 0;}
-}
-/* mainVis06 길이 : 3026 */
-@keyframes mainVis06{
-    0%{stroke-dashoffset: 3026;} 
-    100%{stroke-dashoffset: 0;}
-}
+
 
 
 
@@ -199,18 +175,22 @@ header .home svg{width: 100%; fill: #fff;}
     .main-img-ani{bottom: 10%;}
 }
 @media (max-width:960px){
-    .main-img-ani svg{width: 600px;}
+    .main-img-ani svg{width: 400px;}
 }
 @media (max-width:768px){
-    .main-img-ani svg{width: 500px;}
+    .main-img-ani svg{width: 350px;}
 }
 @media (max-width:600px){
-    .main-txt{font-size: 7vw;}
-    .main-img-ani{width: 100%; bottom: 7%;}
+    .main-left{position: absolute; top: 20%;}
+    .main-txt{font-size: 7vw; margin-bottom: 30px;}
+    .main-btn{width: 130px; padding: 10px;}
+    .main-img-ani{width: 100%; bottom: 0;}
     .main-img-ani svg{width: 100%;}
 }
 
-
+@media (max-width:375px){
+    .main-left{top: 30%;}
+}
 
 
 
