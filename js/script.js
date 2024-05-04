@@ -81,22 +81,21 @@ $(function(){
 });
 
 //sec3 위치일때 배경색과 글씨색 변경
-$(function(){
+/* $(function(){
     gsap.timeline({
         scrollTrigger:{
-            trigger:'.sec03',
+            trigger:'.bg-active',
             start:'0% 100%',
             end:'10% 100%',
-            scrub:1,
+            scrub:1
             //markers:true
 
         }
     })
 
-    .to('.sec-work',{backgroundColor:'#fff', color:'#222', ease:'none',duration:5},0)
-    .to('.wrap',{backgroundColor:'#fff', ease:'none',duration:5},0)
+    .to('.bg-active',{backgroundColor:'#fff', ease:'none',duration:2},0)
 
-});
+}); */
 
 //sec04 위치일때 배경색과 글씨색 변경
 $(function(){
@@ -110,9 +109,9 @@ $(function(){
         }
     })
     
-    .to('.sec-work',{backgroundColor:'#222', color:'#fff', ease:'none', duration:5},0)
-    .to('.wrap',{backgroundColor:'#222', color:'#fff', ease:'none', duration:5},0)
+    .to('.bg-active',{backgroundColor:'#222', color:'#fff', ease:'none', duration:5},0)
 });
+
 
 
 
