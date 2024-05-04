@@ -34,18 +34,8 @@
     버튼
 ========================================================*/
 .btn-back{padding: 60px 0;}
-.btn-back button{
-    width: 200px;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #d499b9;
-    display: block;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: 600;
-}
+.btn-back button{ margin: 0 auto; display: block; width: 160px; border-radius: 30px; padding: 15px 20px; background-color: #d499b9; color: #fff; text-align: center; letter-spacing: 1.1px;
+font-size: 14px}
 
 footer{    
     padding: 60px 0;
@@ -172,7 +162,6 @@ footer{
     .dcs-right{ padding-left: 0; margin-top: 30px; border-top: 1px solid #ddd; padding-top: 30px;}
 }
 @media (max-width:600px){
-    .btn-back button{width: 150px; padding: 15px 10px; font-size: 14px;}
     .sub-tit{font-size: 28px;  margin-bottom: 30px;}
 
     .sub-wrap .pc{display: none;}

@@ -134,7 +134,7 @@ header .home svg{width: 100%; fill: #fff;}
 .main-visual .inner{ display: flex; align-items: center; position: relative;}
 
 /* 텍스트 애니메이션 */
-.main-txt{font-size: 5vw; font-weight: 500; line-height: 1.2;}
+.main-txt{font-size: 5vw; font-weight: 500; line-height: 1.2; margin-bottom: 40px;}
 .main-visual.motion .main-txt{transform: translate3d(0,0,0) skewY(0deg); overflow: hidden; color: #d499b9;}
 .main-visual.motion .main-txt span.first-txt{display: block; animation-name: text-ani; animation-duration: .8s;}
 .main-visual.motion .main-txt span.second-txt{display: block; animation-name: text-ani; animation-duration: .6s;}
@@ -142,6 +142,8 @@ header .home svg{width: 100%; fill: #fff;}
     0%{opacity: 0;}
     30%{opacity: 0; transform: translate3d(0,-90px,0) skewY(-10deg); transform-origin: top left;}
 }
+
+.main-btn{width: 160px; border-radius: 30px; padding: 15px 20px; background-color: #d499b9; color: #fff; text-align: center; letter-spacing: 1.1px;}
 
 /* svg 애니메이션 */
 .main-img-ani{position: absolute; bottom: 10%; right: 0;}
@@ -398,7 +400,8 @@ header .home svg{width: 100%; fill: #fff;}
 @media (max-width:768px){
     /* sec-work */
     .work-cont{margin-top: 20px;}
-    .work-tit{font-size: 20px;}
+    .work-tit{font-size: 20px; margin-bottom: 5px;}
+    .work-img{margin-bottom: 10px;}
 }
 @media (max-width:600px){
     /* sec-work */
@@ -408,7 +411,7 @@ header .home svg{width: 100%; fill: #fff;}
     .work-swiper .swiper-button-prev.swiper-button-disabled,
     .work-swiper .swiper-button-next, 
     .work-swiper .swiper-button-prev{width: 50px; height: 50px;}
-    .work-tit{font-size: 18px; text-align: center;}
+    .work-tit{text-align: center;}
     .work-skill{justify-content: center;}
 }
 @media (max-width:425px){
