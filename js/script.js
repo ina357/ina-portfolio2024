@@ -3,6 +3,14 @@ $(function(){
     Splitting()
 });
 
+// scrollo.js 스크롤할때마다 애니메이션 작동시키기
+$(function(){
+    $('.animate').scrolla({
+        mobile: true,
+        once: false
+    });
+});
+
 //모든 링크의 부드러운 스크롤 추가
 $(document).ready(function(){ 
     $("a").on('click', function(event) {
@@ -37,15 +45,6 @@ $(function(){
     })
 })
 
-//스크롤 다운된 상태에서 새로고침 했을 때 헤더 bg 나타나게
-$(window).ready(function(){
-    var scrollTop = $(document).scrollTop();
-    if(scrollTop > 100){
-        $('.header').addClass('fixed');
-    } else{
-        $('.header').removeClass('fixed');
-    }
-});
 
  //모바일 메뉴
 $(function(){
@@ -63,14 +62,6 @@ $(function(){
     })
 })
 
-// scrollo.js 스크롤할때마다 애니메이션 작동시키기
-$(function(){
-    $('.animate').scrolla({
-        mobile: true,
-        once: false
-    });
-});
-
 // main-visual svg path 길이 구하기
 $(function(){
     $('.main-img-ani').find('#mainVis01').each(function(i, path){
@@ -79,23 +70,6 @@ $(function(){
     }); // 각각의 길이를 구한다.
     // 6381.20 / 7182.08 / 2303.70 / 4213.48 / 3630.85 / 3026.57
 });
-
-//sec3 위치일때 배경색과 글씨색 변경
-/* $(function(){
-    gsap.timeline({
-        scrollTrigger:{
-            trigger:'.bg-active',
-            start:'0% 100%',
-            end:'10% 100%',
-            scrub:1
-            //markers:true
-
-        }
-    })
-
-    .to('.bg-active',{backgroundColor:'#fff', ease:'none',duration:2},0)
-
-}); */
 
 //sec04 위치일때 배경색과 글씨색 변경
 $(function(){

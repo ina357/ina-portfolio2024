@@ -55,15 +55,15 @@
 /* =======================================================
     header
 ========================================================*/
-header{width: 100%;position: fixed; top: 0; left: 0; background:rgb(20, 20, 20,0.2); padding: 0 40px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;z-index: 999; }
+header{width: 100%;position: fixed; top: 0; left: 0; background:rgba(20, 20, 20, 0.585); padding: 0 40px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;z-index: 999; height: 70px; }
 header.active{transform: translateY(-100%);}
 header .home{display: flex; width: auto; align-items: center;}
-header .home svg{width: 100%; fill: #d499b9;}
+header .home svg{width: 100%; fill: #fff;}
 .gnb{width: auto;}
 .gnb ul{display: flex;}
-.gnb ul li{margin-right: 20px; font-size: 18px; font-weight: 600;}
+.gnb ul li{margin-right: 20px; font-weight: 600;}
 .gnb ul li:last-child{margin-right: 0;}
-.gnb ul li a{padding: 20px;}
+.gnb ul li a{padding: 10px 20px;}
 .gnb ul li a .char{display: inline-block; position: relative; color: transparent; overflow: hidden;}
 .gnb ul li a .char::before,
 .gnb ul li a .char::after{
@@ -71,7 +71,7 @@ header .home svg{width: 100%; fill: #d499b9;}
     top: 0;
     left: 0;
     opacity: 0.6;
-    color: #d499b9;
+    color: #fff;
     content: attr(data-char);
     transition: transform 0.35s;
     transition-delay: calc(30ms * var(--char-index));
@@ -218,7 +218,7 @@ header .home svg{width: 100%; fill: #d499b9;}
 ========================================================*/
 .sec-about{height: 100vh ;display: flex; align-items: center;border-radius: 30px 30px 0 0; background-color: #d499b9;   color: #fff; }
 .sec-about .inner{display: flex; align-items: center;}
-.about-cont{ display: flex; align-items: flex-start;;}
+.about-cont{ display: flex; align-items: flex-start; width: 100%;}
 .about-left{width: calc(30% - 60px); margin-right: 60px;}
 .about-center{width: calc(34% - 60px); margin-right: 60px;}
 .about-right{width: 36%; box-sizing: border-box;}
