@@ -12,7 +12,7 @@ $(function(){
 });
 
 //모든 링크의 부드러운 스크롤 추가
-$(document).ready(function(){ 
+$(function(){ 
     $("a").on('click', function(event) {
 
       // hash값 찾기
@@ -52,7 +52,7 @@ $(function(){
     $('.mo-menu').on('click', function(){ 
         $('.gnb').toggleClass('on');
         $(this).toggleClass('on');
-        $('body').addClass('on');
+        $('body').toggleClass('on');
     })
     //모바일 메뉴 클릭시
     $('.gnb ul li').on('click', function(){ 

@@ -563,5 +563,16 @@
             }
         init();
     </script>
+    <!-- 외부 JavaScript 파일 비동기 로딩 -->
+    <script>
+        // 비동기적으로 외부 JavaScript 파일 로드
+        function loadScript(url) {
+            var script = document.createElement('script');
+            script.src = url;
+            document.head.appendChild(script);
+        }
+        // 외부 JavaScript 파일 로드
+        loadScript('script.js');
+    </script>
 </body>
 </html>
