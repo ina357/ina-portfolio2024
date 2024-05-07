@@ -16,7 +16,7 @@
 
 .sub-wrap .pc{display: block;}
 .sub-wrap .mobile{display: none;}
-
+.sub-con{margin-bottom: 40px;}
 
 /* =======================================================
     서브페이지 header
@@ -108,7 +108,7 @@ font-size: 14px}
 .dsc-a ul li{margin-right: 10px;}
 .dsc-a ul li:last-child{margin-right: 0;}
 
-.sub-tit{font-size: 32px; margin-bottom: 40px;}
+.sub-tit{font-size: 32px; margin-bottom: 40px; font-weight: 500;}
 .design-list ul{display: flex; flex-wrap: wrap;}
 .design-list ul li{width: calc((100% - 60px) / 3); margin-right: 30px; margin-bottom: 30px; }
 .design-list ul li:nth-child(3n){margin-right: 0;}
