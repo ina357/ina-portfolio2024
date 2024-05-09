@@ -463,11 +463,6 @@ header .home svg{width: 100%; fill: #d499b9;}
 
 
 
-@media (max-width:425px){
-    .work-swiper .swiper-button-next.swiper-button-disabled, .work-swiper .swiper-button-prev.swiper-button-disabled, .work-swiper .swiper-button-next, .work-swiper .swiper-button-prev{top: 37%;}
-}
-
-
 
 @media (max-width:375px){
     /* sec-work */
