@@ -31,22 +31,18 @@ $(function(){
     });
 });
 
-//헤더 스크롤시
-$(function(){
-    var prevScrollTop = 0;
-    document.addEventListener("scroll",function(){
-        var nowScrollTop = $(window).scrollTop();
-        if(nowScrollTop > prevScrollTop){
-            $('header').addClass('active');
-        }else{
-            $('header').removeClass('active');
-        }
-        prevScrollTop = nowScrollTop;
-    })
-})
+//헤더 스크롤 시
+$(window).scroll(function(){
+    var scrollTop = $(document).scrollTop();
+    if(scrollTop > 100){
+        $('header').addClass('fixed');
+    } else{
+        $('header').removeClass('fixed');
+    }
+});
 
 
- //모바일 메뉴
+//모바일 메뉴
 $(function(){
     //모바일 메뉴 버튼
     $('.mo-menu').on('click', function(){ 

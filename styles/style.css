@@ -79,8 +79,8 @@
 /* =======================================================
     header
 ========================================================*/
-header{width: 100%;position: fixed; top: 0; left: 0; background-color: #fff; padding: 0 40px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;z-index: 999; height: 70px; }
-header.active{transform: translateY(-100%);}
+header{width: 100%;position: fixed; top: 0; left: 0; background-color: #ffffff00; border-bottom: 1px solid #fafafa; padding: 0 40px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;z-index: 999; height: 70px; }
+header.fixed{background-color: #fff;}
 header .home{display: flex; width: auto; align-items: center;}
 header .home svg{width: 100%; fill: #FFA62F;}
 .gnb{width: auto;}
