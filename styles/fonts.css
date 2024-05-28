@@ -79,7 +79,7 @@
 
 
 
-/* 한글폰트 */
+/* Pretendard */
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 900;
@@ -144,18 +144,3 @@
 }
 
 
-/* en7 metropolis-font */
-@font-face {
-    font-family: 'genera-font';
-    src:url('../fonts/genera-font/GeneraAltLight-ALEGD.otf') format('opentype'),
-        url('../fonts/genera-font/GeneraAltLight-ALEGD.woff') format('woff');
-    font-weight: light;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'genera-font';
-    src:url('../fonts/genera-font/GeneraSemibold-qZmod.otf') format('opentype'),
-        url('../fonts/genera-font/GeneraSemibold-qZmod.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
