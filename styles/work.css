@@ -52,7 +52,6 @@
 
 @media (max-width:425px){
     .inner{padding: 0 15px;}
-    footer{padding: 40px 0;}
 }
 
 /* =======================================================
@@ -162,6 +161,7 @@ footer{ padding: 60px 0; box-sizing: border-box; background: #222; font-size: 12
     .sub-wrap .mobile{display: block;}}
     
 @media (max-width:425px){
+    footer{padding: 40px 0;}
     .new-open svg{display: none;}
     .dcs-right > ul > li{margin-bottom: 20px;}
     .dsc-a{font-size: 14px;}
