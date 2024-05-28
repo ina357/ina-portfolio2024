@@ -4,7 +4,8 @@
 ========================================================*/
 .content{margin-top: 80px;}
 .sec{ width: 100vw; height: 100vh; padding: 80px 0; position: relative;}
-.tit{font-size: 80px; font-weight: 500; letter-spacing: -1.5px; line-height: 1.2;}
+
+.tit h2{font-size: 80px; font-weight: 500; letter-spacing: -1.5px; line-height: 1.2;}
 .sec.motion .tit{overflow: hidden;}
 .sec.motion .tit span{display: block}
 .sec.motion .tit span:nth-child(1){animation-duration: 0.6s;}
@@ -37,14 +38,14 @@
 ========================================================*/
 @media (max-width:1200px){
     /* common */
-    .tit{font-size: 65px;}
+    .tit h2{font-size: 65px;}
 }
 
 
 
 @media (max-width:1024px){
     /* common */
-    .tit{font-size: 46px;}
+    .tit h2{font-size: 46px;}
     .inner{padding: 0 30px;}
 }
 
@@ -61,7 +62,7 @@
 
 @media (max-width:600px){
     /* common */
-    .tit{font-size: 36px; text-align: center;}
+    .tit h2{font-size: 36px; text-align: center;}
 }
 
 
@@ -80,7 +81,7 @@
     header
 ========================================================*/
 header{width: 100%;position: fixed; top: 0; left: 0; background-color: #ffffff00; border-bottom: 1px solid #fafafa; padding: 0 40px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;z-index: 999; height: 70px; }
-header.fixed{background-color: #fff;}
+header.fixed{background-color: rgb(255, 255, 255);}
 header .home{display: flex; width: auto; align-items: center;}
 header .home svg{width: 100%; fill: #FFA62F;}
 .gnb{width: auto;}
@@ -95,7 +96,7 @@ header .home svg{width: 100%; fill: #FFA62F;}
     top: 0;
     left: 0;
     opacity: 0.8;
-    color: #FFA62F;
+    color: #FFA62F !important;
     content: attr(data-char);
     transition: transform 0.35s;
     transition-delay: calc(30ms * var(--char-index));
@@ -166,7 +167,8 @@ header .home svg{width: 100%; fill: #FFA62F;}
 .main-visual .inner{ display: flex; align-items: center; position: relative;}
 
 /* 텍스트 애니메이션 */
-.main-txt{font-size: 5vw; font-weight: 500; line-height: 1.2; margin-bottom: 40px;}
+.main-txt{ margin-bottom: 40px;}
+.main-txt h1{font-size: 5vw; font-weight: 500; line-height: 1.2;}
 .main-visual.motion .main-txt{transform: translate3d(0,0,0) skewY(0deg); overflow: hidden; color: #FFA62F;}
 .main-visual.motion .main-txt span.first-txt{display: block; animation-name: text-ani; animation-duration: .6s;}
 .main-visual.motion .main-txt span.second-txt{display: block; animation-name: text-ani; animation-duration: .4s;}
@@ -230,7 +232,8 @@ header .home svg{width: 100%; fill: #FFA62F;}
 @media (max-width:600px){
     .main-visual{height: 600px;}
     .main-left{position: absolute; top: 26%;}
-    .main-txt{font-size: 7vw; margin-bottom: 30px;}
+    .main-txt{margin-bottom: 30px;}
+    .main-txt h1{font-size: 7vw;}
     .main-btn{width: 130px; padding: 10px;}
     .main-img-ani{width: 100%; bottom: 0;}
     .main-img-ani svg{width: 100%;}
@@ -542,7 +545,8 @@ header .home svg{width: 100%; fill: #FFA62F;}
 .contact-cont ul li{width: calc((100% - 60px) / 3); margin-right: 30px;}
 .contact-cont ul li:last-child{margin-right: 0;}
 
-.contact-q{font-size: 36px; margin-bottom: 12px;}
+.contact-q{margin-bottom: 12px;}
+.contact-q h3{font-size: 36px; font-weight: 500;}
 .contact-a{font-size: 24px;}
 .contact-social{display: flex; position: relative;}
 .contact-social > svg{width: 28px; fill: #fff; margin-right: 10px;}
@@ -569,7 +573,7 @@ header .home svg{width: 100%; fill: #FFA62F;}
 ========================================================*/
 @media (max-width:1024px){
     /* sec-contact */
-    .contact-q{font-size: 30px;}
+    .contact-q h3{font-size: 30px;}
     .contact-a{font-size: 20px;}
     .contact-social:hover .sns01::after{width: 210px;}
     .contact-social:hover .sns02::after{width: 196px;}
@@ -590,7 +594,8 @@ header .home svg{width: 100%; fill: #FFA62F;}
 
 @media (max-width:600px){
     /* sec-contact */
-    .contact-q{font-size: 24px; text-align: center; margin-bottom: 8px;}
+    .contact-q{margin-bottom: 8px; text-align: center;}
+    .contact-q h3{font-size: 24px;}
     .contact-a{font-size: 18px;}
     .contact-cont ul li{width: 100%; margin-right: 0; margin-bottom: 30px;}
     .contact-cont ul li:last-child{margin-bottom: 0; margin-top: 0;}

@@ -7,17 +7,18 @@
     <!-- font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap">
+    <link rel="stylesheet" href="./styles/fonts.css">
 
     <!-- css -->
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/style.css">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
+
     <!-- js --> 
     <script src="./js/jquery-3.3.1.min.js"></script>
+
     <!-- plugin -->
     <script src="./js/plugin/splitting.min.js"></script>
     <script src="./js/plugin/scrolla.jquery.min.js"></script>
@@ -35,7 +36,7 @@
         
         <!-- S:header -->
         <header> 
-            <a class="home">
+            <a class="home" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
             </a>
             <div class="gnb">
@@ -59,8 +60,8 @@
             <div class="inner">
                 <div class="main-left">
                     <div class="main-txt"> 
-                        <p><span class="en first-txt">hi! I'm working on design,</span></p>
-                        <p><span class="en second-txt">publishing, and frontend.</span></p>
+                        <h1><span class="en first-txt">hi! I'm working on design,</span></h1>
+                        <h1><span class="en second-txt">publishing, and frontend.</span></h1>
                     </div>
                     <a href="#contact" class="main-btn"><span class="en">contact</span></a>
                 </div>
@@ -228,8 +229,8 @@
             <div id="work" class="sec sec-work sec03 animate" data-animate="motion">
                 <div class="inner">
                     <div class="tit en">
-                        <span>Website design</span>
-                        <span>&#38; Publishing</span>
+                        <h2><span>Website design</span></h2>
+                        <h2><span>&#38; Publishing</span></h2>
                     </div>
     
                     <!-- S:pc work-cont-->
@@ -448,8 +449,8 @@
             <div id="blog" class="sec sec-blog sec04 animate"  data-animate="motion">
                 <div class="inner">
                     <div class="tit">
-                        <span> Website study</span> 
-                        <span> &#38; Daily blog</span>
+                        <h2><span> Website study</span></h2>
+                        <h2><span> &#38; Daily blog</span></h2>
                     </div>
                     <div class="content">
                         <div class="blog-list">
@@ -517,16 +518,16 @@
             <!-- E:sec-blog -->
     
             <!-- S:sec-contact -->
-            <div id="contact" class="sec sec-contact sec05 animate" data-animate="motion">
+            <footer id="contact" class="sec sec-contact sec05 animate" data-animate="motion">
                 <div class="inner">
                     <div class="tit en">
-                        <span>Work together,</span>
-                        <span>Contact me</span>
+                        <h2><span>Work together,</span></h2>
+                        <h2><span>Contact me</span></h2>
                     </div>
                     <div class="contact-cont content">
                         <ul>
                             <li>
-                                <p class="contact-q">To contact me</p>
+                                <div class="contact-q"><h3>To contact me</h3></div>
                                 <p class="contact-a">
                                     <a href="mailto:ina357@naver.com" class="contact-social">
                                         <svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Glyph_copy_2"><path d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z"/><path d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z"/></g></svg>
@@ -535,7 +536,7 @@
                                 </p>
                             </li>
                             <li>
-                                <p class="contact-q">Go to github</p>
+                                <div class="contact-q"><h3>Go to github</h3></div>
                                 <p class="contact-a">
                                     <a href="https://github.com/ina357/ina-portfolio2024.git" target="_blank" class="contact-social">
                                         <svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
@@ -554,7 +555,7 @@
                                 </p>
                             </li>
                             <li>
-                                <p class="contact-q">Social</p>
+                                <div class="contact-q"><h3>Social</h3></div>
                                 <p class="contact-a">
                                     <a class="contact-social contact-kakao" onclick="alert('준비중 입니다.')">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -570,7 +571,7 @@
                         </ul>   
                     </div>
                 </div>
-            </div>
+            </footer>
             <!-- E:sec-contact -->
         </div>
         
